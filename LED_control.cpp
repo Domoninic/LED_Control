@@ -36,6 +36,7 @@ void LED_control::Update() {
 			toggle(false); 
 		}
 	else if (pulsing) {
+		//something here is wrong, the LED goes off at top of pulses
 		pulsingElapsed =  (float)(currentMillis - previousMillis) / (float)period;
 		
 		if (pulsingElapsed >= 1 ) {
